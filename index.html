@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+        <title>Student Portfolio | Hemanth</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+
+        <div id="main-content">
+
+        
+        <!--Navigation Bar-->
+        <nav class="navbar fixed w-full z-50 py-4 px-6 lg:px-12" style="background-color: #2c2c44;">
+            <div class="max-w-6xl mx-auto flex justify-between items-center">
+                <a href="#home" class="text-2xl font-bold text-purple-600">SH</a>
+                <div class=" hidden md:flex space-x-8">
+                    <a href="#home" class=" text-gray-300 transition nav-link"><i class="fas fa-home"></i> Home</a>
+                    <a href="#about" class=" text-gray-300 transition nav-link"><i class="fas fa-user"></i> About</a>
+                    <a href="#Portfolio" class=" text-gray-300 transition nav-link"><i class="fas fa-palette"></i> Portfolio</a>
+                    <a href="#contact" class="text-gray-300 transition nav-link"><i class="fas fa-phone"></i> Contact</a>
+                </div>
+                <button class="md:hidden text-gray-700 mobile-menu-button" id="mobile-menu-button">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </nav>
+        
+        <!--Mobile Navigation Bar-->
+        <div class="mobile-menu hidden md:hidden fixed inset-0 bg-[#1a1a2e] z-50 flex flex-col items-center justify-center space-y-8">
+            <button class="absolute top-5 right-5 p-2 text-white close-menu">
+                <i class="fas fa-times text-3xl"></i>
+            </button>
+            <a href="#home" class="text-2xl text-white hover:text-purple-400 transition mobile-link">Home</a>
+            <a href="#about" class="text-2xl text-white hover:text-purple-400 transition mobile-link">About</a>
+            <a href="#Portfolio" class="text-2xl text-white hover:text-purple-400 transition mobile-link">Portfolio</a>
+            <a href="#contact" class="text-2xl text-white hover:text-purple-400 transition mobile-link">Contact</a>
+        </div>
+
+        <!--Home Section-->
+        <section id="home" class="min-h-screen flex items-center justify-center relative pt-16 md:pt-0" style="background-color: #1a1a2e;">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 py-8 md:py-0">
+                <div class="flex flex-col md:flex-row items-center gap-8 md:gap-12">
+                    <div class="md:w-1/2 md:text-left order-2 md:order-1">
+                        <p class="text-purple-400 text-base sm:text-lg mb-2 font-medium">Hello, I'm</p>
+                        <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-3">Sesetty hemanth</h1>
+                        <h2 class="text-xl sm:text-2xl md:text-3xl font-semibold text-white mb-4">
+                            And I'm a <span class="text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-pink-500">Full Stack Developer</span>
+                        </h2>
+                        
+                        <p class="text-gray-300 text-base sm:text-lg leading-relaxed mb-6 max-w-2xl mx-auto md:mx-0">
+                            A passionate Full Stack Developer, Web Designer 
+                            dedicated to building dynamic, user friendly, and visually engaging web experiences.
+                        </p>
+                        
+                        <div class="flex flex-row gap-3 sm:gap-4 justify-center md:justify-start">
+                            <a href="Hemanth_Resume.pdf" download="Hemanth_Resume.pdf" class="px-6 sm:px-8 py-2.5 sm:py-3 border-2 border-white text-white font-medium rounded-full hover:bg-white hover:text-purple-700 transition duration-300 transform hover:scale-105 text-sm sm:text-base">
+                                Resume
+                            </a>
+                            <button onclick="window.location.href='tel:+919346539195'" class="px-6 sm:px-8 py-2.5 sm:py-3 border-2 border-white bg-white text-purple-700 font-medium rounded-full transition duration-300 transform hover:scale-105 text-sm sm:text-base">
+                                Contact us
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="md:w-1/2 flex justify-center order-1 md:order-2">
+                        <div class="profile-image-container relative">
+                            <div class="absolute inset-0 bg-gradient-to-r rounded-full blur-lg opacity-50 animate-pulse"></div>
+                            <img 
+                                src="Image/Hemanth.png" 
+                                alt="profile image" 
+                                class="profile-pic hero-profile-pic relative z-10 rounded-full border-4 border-white shadow-2xl"
+                            >
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="absolute bottom-5 left-1/2 transform -translate-x-1/2">
+                <div class="mouse">
+                    <span class="scroll-down"></span>
+                </div>
+            </div>
+        </section>
+
+        <!--About Section-->
+        <section id="about" class="py-16 hero flex items-center justify-center" style="background-color: #1a1a2e;">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="flex flex-col md:flex-row items-center gap-20">
+                    <div class="md:w-1/2 flex justify-center">
+                        <div class="profile-image-container relative">
+                            <div class="absolute inset-0 bg-gradient-to-r rounded-full blur-lg opacity-50 animate-pulse" style="border-radius: 52% / 50%;"></div>
+                            <img 
+                                src="Image/Profile.jpeg" 
+                                alt="profile image" 
+                                class="profile-pic about-profile-pic relative z-10 rounded-full border-4 border-white shadow-2xl"
+                                style="border-radius: 52% / 50%;"
+                            >
+                        </div>
+                    </div>
+                    
+                    <div class="md:w-1/2 flex flex-col justify-center">
+                        <h1 class="text-5xl font-bold mb-6 text-white"><span class="text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-pink-500">About</span> Me</h1>
+                        <p class="text-gray-200 mb-6 text-justify">Hi, I'm Sesetty Hemanth, a passionate Full Stack Developer. 
+                            I love creating modern, responsive, and user-friendly web applications. 
+                            With skills in both frontend and backend development, I bring ideas to life from design to deployment. 
+                            Always eager to learn and innovate, I aim to build impactful, scalable, and efficient digital experiences.
+                        </p>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-3 animate-in delay-1">
+                            <div class="profile-pic p-3 rounded-lg shadow-md flex items-center gap-3 bg-[#2c2c44] shadow-1xl border border-[#ec4899]/20">
+                                <div class="text-blue-500 text-lg">
+                                    <i class="fas fa-code"></i>
+                                </div>
+                                <div>
+                                    <h3 class="text-gray-100 font-semibold text-lg mb-1">Clean Code</h3>
+                                    <p class="text-gray-300 text-sm">Writing maintainable and efficient code</p>
+                                </div>
+                            </div>
+                            <div class="profile-pic p-3 rounded-lg shadow-md flex items-center gap-3 bg-[#2c2c44] shadow-1xl border border-[#ec4899]/20">
+                                <div class="text-green-500 text-lg">
+                                    <i class="fas fa-swatchbook"></i>
+                                </div>
+                                <div>
+                                    <h3 class="text-gray-100 font-semibold text-lg mb-1">Design Focus</h3>
+                                    <p class="text-gray-300 text-sm">Creating beautiful user interfaces</p>
+                                </div>
+                            </div>
+                            <div class="profile-pic p-3 rounded-lg shadow-md flex items-center gap-3 bg-[#2c2c44] shadow-1xl border border-[#ec4899]/20">
+                                <div class="text-yellow-500 text-lg">
+                                    <i class="fas fa-bolt"></i>
+                                </div>
+                                <div>
+                                    <h3 class="text-gray-100 font-semibold text-lg mb-1">Fast Learner</h3>
+                                    <p class="text-gray-300 text-sm">Quickly adapting to new technologies</p>
+                                </div>
+                            </div>
+                            <div class="profile-pic p-3 rounded-lg shadow-md flex items-center gap-3 bg-[#2c2c44] shadow-xl border border-[#ec4899]/20">
+                                <div class="text-red-500 text-lg">
+                                    <i class="fas fa-heart"></i>
+                                </div>
+                                <div>
+                                    <h3 class="text-gray-100 font-semibold text-lg mb-1">Passionate</h3>
+                                    <p class="text-gray-300 text-sm">Love for creating digital solutions</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--Portfolio Section-->
+        <section id="Portfolio" class="py-20 relative ">
+            <div class="max-w-6xl mx-auto px-6 lg:px-12">
+                <h2 class="text-4xl font-bold text-center mb-4"><span class="text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-pink-500">Portfolio Showcase</span></h2>
+                <p class="text-center text-gray-300 mb-8">Explore My Journey through Projects, Certificates, And Technical Expertise. Each Section Represents a Milestone in My Continuous Learning Path</p>
+                <div class="tabs">
+                    <button class="tab-btn active text-gray-800" data-tab="projects-tab"><i class=" fas fa-briefcase mr-2 "></i> Projects</button>
+                    <button class="tab-btn text-gray-800" data-tab="certificates-tab"><i class=" fas fa-certificate mr-2"></i> Certificates</button>
+                    <button class="tab-btn text-gray-800" data-tab="skills-tab"><i class=" fas fa-user-graduate mr-2"></i> Skills</button>
+                </div>
+
+                <!--Project tab-->
+                <div id="projects-tab" class="tab-content active"><br>
+                    <div class="grid grid-rows-1 md:grid-cols-3 gap-8 animate-in delay-1 " id ="visible-projects">
+                    <div class="project-card bg-white rounded-xl shadow-lg overflow-hidden hover:-translate-y-4 transition-transform"style="background-color: white;">
+                        <div class="relative overflow-hidden group bg-gradient-to-b from-[#2d2250] to-[#181926] flex items-center justify-center h-60">
+                            <img src="Image/Ecommerce.png" alt="E-Commerce Dashboard Icon" class="w-30 h-60"  />
+                            <div class="absolute inset-0 bg-indigo-600 bg-opacity-75 opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity duration-300">
+                                <a href="https://hemanth2004-alt.github.io/E-commerce-website/" class="text-white px-4 py-2 bg-transparent border-2 border-white rounded-lg hover:bg-white hover:text-indigo-600 transition">View Details</a>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-black font-bold mb-2">ECommerce website</h3>
+                            <p class="text-black mb-4">Built a dynamic online shopping platform with smooth navigation, product catalog, and seamless user experience.</p>      
+                        </div>
+                    </div>
+                    
+                    <div class="project-card bg-white rounded-xl shadow-lg overflow-hidden hover:-translate-y-4 transition-transform "style="background-color: white;">
+                        <div class="relative overflow-hidden group bg-gradient-to-b from-[#2d2250] to-[#181926] flex items-center justify-center h-60">
+                            <img src="Image/Quiz.png" alt="Quiz game Icon" class="w-30 h-60"  />
+                            <div class="absolute inset-0 bg-indigo-600 bg-opacity-75 opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity duration-300">
+                                <a href="https://hemanth2004-alt.github.io/QuizGame/" class="text-white px-4 py-2 bg-transparent border-2 border-white rounded-lg hover:bg-white hover:text-indigo-600 transition">View Details</a>
+                            </div>
+                        </div>
+                        <div class="p-6 ">
+                            <h3 class="text-black font-bold mb-2">Quiz Game</h3>
+                            <p class="text-black mb-4">Developed an interactive programming quiz game. Designed a fun interface to help users improve coding skills.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card bg-white rounded-xl shadow-lg overflow-hidden hover:-translate-y-4 transition-transform "style="background-color: white;">
+                        <div class="relative overflow-hidden group bg-gradient-to-b from-[#2d2250] to-[#181926] flex items-center justify-center h-60">
+                            <img src="Image/OnlineLearning.png" alt="FlashLearn Hub Icon" class="w-30 h-60" />
+                            <div class="absolute inset-0 bg-indigo-600 bg-opacity-75 opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity duration-300">
+                                <a href="#" class="text-white px-4 py-2 bg-transparent border-2 border-white rounded-lg hover:bg-white hover:text-indigo-600 transition">View Details</a>
+                            </div>
+                        </div>
+                        <div class="p-6 ">
+                            <h3 class="text-black font-bold mb-2">FlashLearn Hub</h3>
+                            <p class="text-black mb-4">Developed FlashLearn, an interactive platform with flashcards. Designed a user friendly interface for learning.</p>
+                        </div>
+                    </div> 
+                    </div>
+                    <br><br>
+                    <div class="grid grid-rows-1 md:grid-cols-3 gap-8 animate-in delay-1" id="hidden-projects" style="display: none;">
+                    </div>
+                    <div class="text-center mt-12 animate-in delay-2">
+                        <button id="toggle-projects" class="px-6 py-3 bg-indigo-500 text-white rounded-lg inline-block hover:bg-indigo-600 transition transform hover:scale-105">
+                            <i class="fas fa-eye mr-2"></i>Show More Projects
+                        </button>
+                    </div>
+                </div>
+
+                <!--Certificate tab-->
+                <div id="certificates-tab" class="tab-content hidden ">
+                    <div class="project-slider relative overflow-slider ">
+                    <div class="flex justify-center">
+                    <div class="  rounded-2xl p-6 flex flex-col items-center">
+                        <img src="Image/Quantum.png" alt="Quantum Certificate " class=" rounded-xl text-1/2 mb-4" style="max-width: 350px;">
+                        <h3 class="text-center font-bold text-gray-300 mb-3">Quantum Fundamentals</h3>
+                        <p class=" text-gray-400 text-center">Four weeks introduction to quantum computing and quantum technologies.</p>
+                        </div>
+                    </div>
+                    <div class="flex justify-center">
+                    <div class=" rounded-2xl p-6 flex flex-col items-center">
+                        <img src="Image/CSA.png" alt="ServiceNow CSA Certificate" class=" rounded-xl text-1/2 mb-4" style="max-width: 350px;">
+                        <h3 class="text-center font-bold text-gray-300 mb-3">ServiceNow CSA</h3>
+                        <p class=" text-gray-400 text-center">Certified System Administrator for ServiceNow platform.</p>
+                        </div>
+                    </div>
+                    <div class="flex justify-center">
+                    <div class=" rounded-2xl p-6 flex flex-col items-center">
+                        <img src="Image/CAD.png" alt="ServiceNow CAD Certificate" class=" rounded-xl text-1/2 mb-4" style="max-width: 350px;">
+                        <h3 class="text-center font-bold text-gray-300 mb-3">ServiceNow CAD</h3>
+                        <p class=" text-gray-400 text-center">Certified Application Developer for ServiceNow platform.</p>
+                        </div>
+                    </div>
+                    <div class="flex justify-center">
+                    <div class=" rounded-2xl p-6 flex flex-col items-center">
+                        <img src="Image/Android developer.png" alt="Android developer virtual Internship" class=" rounded-xl text-1/2 mb-4" style="max-width: 350px;">
+                        <h3 class="text-center font-bold text-gray-300 mb-3">Android Developer Virtual Internship</h3>
+                        <p class="text-gray-400 text-center">Completed virtual internship program for Android app development.</p>
+                        </div>
+                    </div>
+                    <div class="flex justify-center">
+                    <div class=" rounded-2xl p-6 flex flex-col items-center">
+                        <img src="Image/Hackathon.png" alt="sankalp Certificate" class=" rounded-xl text-1/2 mb-4" style="max-width: 350px;">
+                        <h3 class="text-center font-bold text-gray-300 mb-3">Sankalp 2025</h3>
+                        <p class=" text-gray-400 text-center">Recognized for active participation in 24 hour SANKALP 2025 hackathon.</p>
+                        </div>
+                    </div>
+                    <div class="flex justify-center">
+                    <div class=" rounded-2xl p-6 flex flex-col items-center">
+                        <img src="Image/freedom.png" alt="Freedom fest Certificate" class=" rounded-xl text-1/2 mb-4" style="max-width: 350px;">
+                        <h3 class="text-center font-bold text-gray-300 mb-3">Freedom Fest 2025</h3>
+                        <p class=" text-gray-400 text-center">Participated in 3 day Freedom Fest 2025 workshop on WordPress & FlutterFlow.</p>
+                        </div>
+                    </div>
+                    <div class="flex justify-center">
+                    <div class=" rounded-2xl p-6 flex flex-col items-center">
+                        <img src="Image/DesignThinking.png" alt="Design Thinking Certificate " class=" rounded-xl text-1/2 mb-4" style="max-width: 350px;">
+                        <h3 class="text-center font-bold text-gray-300 mb-3">Design Thinking & Project Management</h3>
+                        <p class=" text-gray-400 text-center">Design Thinking and Project Management for creative, structured, and efficient solutions.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex justify-center">
+                    <div class=" rounded-2xl p-6 flex flex-col items-center">
+                        <img src="Image/SixSigma.png" alt="six sigma Certificate" class=" rounded-xl text-1/2 mb-4" style="max-width: 350px;">
+                        <h3 class="text-center font-bold text-gray-300 mb-3">Six Sigma White Belt</h3>
+                        <p class=" text-gray-400 text-center">Achieved Lean Six Sigma White Belt certification from Management and Strategy Institute.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex justify-center">
+                    <div class=" rounded-2xl p-6 flex flex-col items-center">
+                        <img src="Image/CyberSecurity.png" alt="CyberSecurity Certificate" class=" rounded-xl text-1/2 mb-4" style="max-width: 350px;">
+                        <h3 class="text-center font-bold text-gray-300 mb-3">Cyber Security</h3>
+                        <p class=" text-gray-400 text-center">Successfully completed Cyber Security and Ethical Hacking workshop certification.</p>
+                        </div>
+                    </div>
+
+                    <button id="prev-btn" class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-white/20 hover:bg-white/30 text-white p-3 rounded-full transition duration-300  z-30">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button id="next-btn" class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-white/20 hover:bg-white/30 text-white p-3 rounded-full transition duration-300  z-30">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+                    <div class="flex justify-center mt-10 space-x-2">
+                        <button class="project-dot w-3 h-3 rounded-full bg-white/50 hover:bg-white transition duration-300 active" data-slide="0"></button>
+                        <button class="project-dot w-3 h-3 rounded-full bg-white/50 hover:bg-white transition duration-300 " data-slide="1"></button>
+                        <button class="project-dot w-3 h-3 rounded-full bg-white/50 hover:bg-white transition duration-300 " data-slide="2"></button>
+                        <button class="project-dot w-3 h-3 rounded-full bg-white/50 hover:bg-white transition duration-300 " data-slide="3"></button>
+                        <button class="project-dot w-3 h-3 rounded-full bg-white/50 hover:bg-white transition duration-300 " data-slide="4"></button>
+                        <button class="project-dot w-3 h-3 rounded-full bg-white/50 hover:bg-white transition duration-300 " data-slide="5"></button>
+                        <button class="project-dot w-3 h-3 rounded-full bg-white/50 hover:bg-white transition duration-300 " data-slide="6"></button>
+                        <button class="project-dot w-3 h-3 rounded-full bg-white/50 hover:bg-white transition duration-300 " data-slide="7"></button>
+                        <button class="project-dot w-3 h-3 rounded-full bg-white/50 hover:bg-white transition duration-300 " data-slide="8"></button>
+                    </div>
+                </div>
+
+                <!--Skills tab-->
+                <div id="skills-tab" class="tab-content hidden">
+                    <div  class=" flex flex-wrap justify-center gap-6 mb-12">
+                    <div class="profile-pic flex flex-col items-center">
+                            <div class="rounded-full bg-[#23243a] p-4 mb-2">
+                                <img src="Image/React.png" alt="SQL" style="width:48px;height:48px;">
+                            </div>
+                            <span class="text-gray-200 font-semibold">React</span>
+                        </div>
+                        <div class="profile-pic flex flex-col items-center">
+                            <div class="rounded-full bg-[#23243a] p-4 mb-2">
+                                <img src="Image/Java.png" alt="java" style="width:48px;height:48px;">
+                            </div>
+                            <span class="text-gray-200 font-semibold">Java</span>
+                        </div>
+                        <div class="profile-pic flex flex-col items-center ">
+                            <div class="rounded-full bg-[#23243a] p-4 mb-2" >
+                                <img src="Image/Wordpress.png" alt="WordPress" style="width:48px;height:48px;">
+                            </div>
+                            <span class="text-gray-200 font-semibold">WordPress</span>
+                        </div>
+                        <div class="profile-pic flex flex-col items-center">
+                            <div class="rounded-full bg-[#23243a] p-4 mb-2">
+                                <img src="Image/Excel.png" alt="Excel" style="width:48px;height:48px;">
+                            </div>
+                            <span class="text-gray-200 font-semibold">Excel</span>
+                        </div>
+                        <div class="profile-pic flex flex-col items-center">
+                            <div class="rounded-full bg-[#23243a] p-4 mb-2" >
+                                <img src="Image/Mysql.png" alt="Mysql" style="width:48px;height:48px;">
+                            </div>
+                            <span class="text-gray-200 font-semibold">MYSQL</span>
+                        </div>
+                        <div class="profile-pic flex flex-col items-center">
+                            <div class="rounded-full bg-[#23243a] p-4 mb-2">
+                                <img src="Image/Html.png" alt="HTML" style="width:48px;height:48px;">
+                            </div>
+                            <span class="text-gray-200 font-semibold">HTML</span>
+                        </div>
+                        <div class="profile-pic flex flex-col items-center">
+                            <div class="rounded-full bg-[#23243a] p-4 mb-2" >
+                                <img src="Image/Css.png" alt="CSS" style="width:48px;height:48px;">
+                            </div>
+                            <span class="text-gray-200 font-semibold">CSS</span>
+                        </div>
+                        <div class="profile-pic flex flex-col items-center">
+                            <div class="rounded-full bg-[#23243a] p-4 mb-2">
+                                <img src="Image/Js.png" alt="JavaScript" style="width:48px;height:48px;">
+                            </div>
+                            <span class="text-gray-200 font-semibold">JavaScript</span>
+                        </div>
+                        <div class="profile-pic flex flex-col items-center">
+                            <div class="rounded-full bg-[#23243a] p-4 mb-2" >
+                                <img src="Image/Fluterflow.png" alt="FlutterFlow" style="width:48px;height:48px;">
+                            </div>
+                            <span class="text-gray-200 font-semibold">FlutterFlow</span>
+                        </div>
+                        <div class="profile-pic flex flex-col items-center">
+                            <div class="rounded-full bg-[#23243a] p-4 mb-2">
+                                <img src="Image/PowerPoint.png" alt="PowerPoint" style="width:48px;height:48px;">
+                            </div>
+                            <span class="text-gray-200 font-semibold">PowerPoint</span>
+                        </div>
+                        </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto px-8 lg:px-13">
+                        <div class="profile-pic shadow-1xl p-8 rounded-xl shadow-lg">
+                            <div class="flex items-center mb-6">
+                                <div class="bg-gradient-to-tr from-blue-500 to-purple-500 text-white rounded-full p-4 mr-4 text-3xl">
+                                    <i class="fas fa-code"></i>
+                                </div>
+                                <h3 class="text-gray-300 text-2xl font-bold">Frontend Development</h3>
+                            </div>
+                            <div class="mb-4">
+                            <div class="flex justify-between mb-1">
+                                <span class="text-gray-200">HTML</span>
+                            </div>
+                            <div class="w-full bg-gray-700 rounded-full h-2.5 mb-4">
+                                <div class="bg-gradient-to-r from-blue-500 to-purple-500 h-2.5 rounded-full" style="width: 100%"></div>
+                            </div>
+                            <div class="flex justify-between mb-1">
+                                <span class="text-gray-200">Css</span>
+                            </div>
+                            <div class="w-full bg-gray-700 rounded-full h-2.5 mb-4">
+                                <div class="bg-gradient-to-r from-blue-500 to-purple-500 h-2.5 rounded-full" style="width: 100%"></div>
+                            </div>
+                            <div class="flex justify-between mb-1">
+                                <span class="text-gray-200">JavaScript</span>
+                            </div>
+                            <div class="w-full bg-gray-700 rounded-full h-2.5 mb-4">
+                                <div class="bg-gradient-to-r from-blue-500 to-purple-500 h-2.5 rounded-full" style="width: 100%"></div>
+                            </div>
+                            <div class="flex justify-between mb-1">
+                                <span class="text-gray-200">React</span>
+                            </div>
+                            <div class="w-full bg-gray-700 rounded-full h-2.5">
+                                <div class="bg-gradient-to-r from-blue-500 to-purple-500 h-2.5 rounded-full" style="width: 100%"></div>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="profile-pic shadow-1xl p-8 rounded-xl shadow-lg">
+                            <div class="flex items-center mb-6">
+                                <div class="bg-gradient-to-tr from-purple-500 to-pink-500 text-white rounded-full p-4 mr-4 text-3xl">
+                                    <i class="fas fa-database"></i>
+                                </div>
+                                <h3 class="text-gray-300 text-2xl font-bold">Backend Development</h3>
+                            </div>
+                            <div class="mb-4">
+                            <div class="flex justify-between mb-1">
+                                <span class="text-gray-200">Java</span>
+                            </div>
+                            <div class="w-full bg-gray-700 rounded-full h-2.5 mb-4">
+                                <div class="bg-gradient-to-r from-purple-500 to-pink-500 h-2.5 rounded-full" style="width: 100%"></div>
+                            </div>
+                            <div class="flex justify-between mb-1">
+                                <span class="text-gray-200">MySQL</span>
+                            </div>
+                            <div class="w-full bg-gray-700 rounded-full h-2.5 mb-4">
+                                <div class="bg-gradient-to-r from-purple-500 to-pink-500 h-2.5 rounded-full" style="width: 100%"></div>
+                            </div>
+                            <div class="flex justify-between mb-1">
+                                <span class="text-gray-200">PHP</span>
+                            </div>
+                            <div class="w-full bg-gray-700 rounded-full h-2.5 mb-4">
+                                <div class="bg-gradient-to-r from-purple-500 to-pink-500 h-2.5 rounded-full" style="width: 100%"></div>
+                            </div>
+                            <div class="flex justify-between mb-1">
+                                <span class="text-gray-200">Node.js</span>
+                            </div>
+                            <div class="w-full bg-gray-700 rounded-full h-2.5">
+                                <div class="bg-gradient-to-r from-purple-500 to-pink-500 h-2.5 rounded-full" style="width: 100%"></div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    <br>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-8xl mx-auto px-8 lg:px-13">
+                        <div class="profile-pic shadow-1xl p-8 rounded-xl shadow-lg">
+                            <div class="flex items-center mb-6">
+                                <div class="bg-gradient-to-tr bg-cyan-500 text-white rounded-full p-4 mr-4 text-3xl">
+                                    <i class="fas fa-palette"></i>
+                                </div>
+                                <h3 class="text-gray-300 text-2xl font-bold">Design & Soft Skills</h3>
+                            </div>
+                            <div class="mb-4">
+                                <div class="flex justify-between mb-1">
+                                    <span class="text-gray-200">Problem Solving</span>
+                                </div>
+                                <div class="w-full bg-gray-700 rounded-full h-2.5 mb-4">
+                                    <div class="bg-gradient-to-r from-cyan-400 to-blue-500 h-2.5 rounded-full" style="width: 100%"></div>
+                                </div>
+                                <div class="flex justify-between mb-1">
+                                    <span class="text-gray-200">Teamwork</span>
+                                </div>
+                                <div class="w-full bg-gray-700 rounded-full h-2.5 mb-4">
+                                    <div class="bg-gradient-to-r from-cyan-400 to-blue-500 h-2.5 rounded-full" style="width: 100%"></div>
+                                </div>
+                                <div class="flex justify-between mb-1">
+                                    <span class="text-gray-200">Communication</span>
+                                </div>
+                                <div class="w-full bg-gray-700 rounded-full h-2.5 mb-4">
+                                    <div class="bg-gradient-to-r from-cyan-400 to-blue-500 h-2.5 rounded-full" style="width: 100%"></div>
+                                </div>
+                                <div class="flex justify-between mb-1">
+                                    <span class="text-gray-200">Critical thinking</span>
+                                </div>
+                                <div class="w-full bg-gray-700 rounded-full h-2.5">
+                                    <div class="bg-gradient-to-r from-cyan-400 to-blue-500 h-2.5 rounded-full" style="width: 100%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="profile-pic shadow-1xl p-8 rounded-xl shadow-lg">
+                            <div class="flex items-center mb-6">
+                                <div class="bg-gradient-to-tr bg-orange-500 text-white rounded-full p-4 mr-4 text-3xl">
+                                    <i class="fas fa-gear"></i>
+                                </div>
+                                <h3 class="text-gray-300 text-2xl font-bold">Tools & Others</h3>
+                            </div>
+                            <div class="mb-4">
+                                <div class="flex justify-between mb-1">
+                                    <span class="text-gray-200">Git & GitHub</span>
+                                </div>
+                                <div class="w-full bg-gray-700 rounded-full h-2.5 mb-4">
+                                    <div class="bg-gradient-to-r from-orange-400 to-pink-500 h-2.5 rounded-full" style="width: 100%"></div>
+                                </div>
+                                <div class="flex justify-between mb-1">
+                                    <span class="text-gray-200">Linux</span>
+                                </div>
+                                <div class="w-full bg-gray-700 rounded-full h-2.5 mb-4">
+                                    <div class="bg-gradient-to-r from-orange-400 to-pink-500 h-2.5 rounded-full" style="width: 100%"></div>
+                                </div>
+                                <div class="flex justify-between mb-1">
+                                    <span class="text-gray-200">Visual Studio Code</span>
+                                </div>
+                                <div class="w-full bg-gray-700 rounded-full h-2.5 mb-4">
+                                    <div class="bg-gradient-to-r from-orange-400 to-pink-500 h-2.5 rounded-full" style="width: 100%"></div>
+                                </div>
+                                <div class="flex justify-between mb-1">
+                                    <span class="text-gray-200">AutoCAD</span>
+                                </div>
+                                <div class="w-full bg-gray-700 rounded-full h-2.5">
+                                    <div class="bg-gradient-to-r from-orange-400 to-pink-500 h-2.5 rounded-full" style="width: 100%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>         
+                </div>
+            </div>
+        </section>
+
+        <!--Contact Section-->
+        <section id="contact" class="py-16 bg-gray-50 "style = "background-color: #1a1a2e;">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 md:px-10 lg:px-12">
+                <h2 class="text-3xl font-bold text-center mb-12 animate-in"><span class="text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-pink-500">Get In Touch</span></h2>
+                <p class=" font-normal text-white text-center mb-6 animate-in">I'm always open to discussing new opportunities, creative projects, or just having a chat about technology and design.</p>
+                <div class="flex flex-col lg:flex-row gap-8 justify-left ">
+                    <div class = "md:w-1/2 ">
+                        <div class="shadow-2xl border-2 border-gray-800 p-8 h-full">
+                            <div class="space-y-4">
+                                <div class="profile-pic flex items-center p-4 rounded-lg border border-gray-400">
+                                    <div class="bg-purple-500 bg-opacity-20 text-purple-400 rounded-full p-3 mr-4">
+                                        <i class="fas fa-envelope text-lg"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-bold text-gray-300 mb-1">Email</h4>
+                                        <p class="text-white">Sesettyhemanth74@gmail.com</p>
+                                    </div>
+                                </div>
+                                <div class="profile-pic flex items-center p-4 rounded-lg border border-gray-400">
+                                    <div class="bg-green-500 bg-opacity-20 text-green-400 rounded-full p-3 mr-4">
+                                        <i class="fas fa-phone text-lg"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-bold text-gray-300 mb-1">Phone</h4>
+                                        <p class="text-white">9346539195</p>
+                                    </div>
+                                </div>
+                                <div class="profile-pic flex items-center p-4 rounded-lg border border-gray-400">
+                                    <div class="bg-blue-500 bg-opacity-20 text-blue-400 rounded-full p-3 mr-4">
+                                        <i class="fas fa-map-marker-alt text-lg"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-bold text-gray-300 mb-1">Location</h4>
+                                        <p class="text-white">Visakhapatnam, Andhra Pradesh</p>
+                                    </div>
+                                </div>
+                            </div>             
+                            <div class="mt-8">
+                                <h4 class="font-medium text-gray-200 mb-4">Follow me on social media</h4>
+                                <div class="flex space-x-8">
+                                    <a href="https://www.linkedin.com/in/sesettyhemanth" class="social-icon text-white hover:text-indigo-800 text-xl"style="filter: drop-shadow(0 0 12px #ff5ccd);"><i class="fab fa-linkedin"></i></a>
+                                    <a href="https://www.facebook.com/profile.php?id=100071371549055" class="social-icon text-white hover:text-indigo-800 text-xl"style="filter: drop-shadow(0 0 12px #ff5ccd);"><i class="fab fa-facebook"></i></a>
+                                    <a href="https://www.instagram.com/lies_of_eyes_123/" class="social-icon text-white hover:text-indigo-800 text-xl"style="filter: drop-shadow(0 0 12px #ff5ccd);"><i class="fab fa-instagram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="map-container">
+                        <iframe
+                            src="https://www.google.com/maps?q=Sri+Siddi+Ganapathi+Temple,+Neelakantapuram,+Saripalli,+Pendurthi,+Visakhapatnam,+Andhra+Pradesh&output=embed"
+                            width="100%"
+                            height="350"
+                            style="border:0;"
+                            allowfullscreen=""
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!--Footer Section-->
+        <footer>
+            <div class="footer-bottom">
+                <p>© 2026 | Website made with <span aria-label="laptop computer" role="img">💻</span> by Hemanth</p>
+            </div>
+        </footer>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
